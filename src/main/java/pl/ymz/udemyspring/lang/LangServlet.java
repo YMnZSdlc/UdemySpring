@@ -28,7 +28,7 @@ class LangServlet {
 
     @GetMapping("/langs")
     ResponseEntity<List<LangDTO>> findAllLangs() {
-        logger.info("Got request ");
+        logger.info("Got request find all languages");
         return ResponseEntity.ok(service.findAll());
     }
 
